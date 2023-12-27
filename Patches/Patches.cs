@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.IO.Compression;
 using System.Reflection;
 using Game.SceneFlow;
@@ -48,9 +47,10 @@ namespace MyRadioMod.Patches
 				]
 			);
 
+
 			// now this lins is going to register the directory of your radio, so the mod know they need to look at this directory to load your radio.
 
-			ExtendedRadio.ExtendedRadio.RegisterCustomRadioDirectory(PathToCustomRadios);
+			ExtendedRadio.CustomRadios.RegisterCustomRadioDirectory(PathToCustomRadios);
 
 		}
 	}
